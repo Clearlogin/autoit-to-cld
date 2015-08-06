@@ -6,9 +6,6 @@
 ;directory the files are located
 $fileDir = @ScriptDir
 
-;filenames of the csv
-$fileNames = StringSplit('schools.csv students.csv staff.csv classes.csv rosters.csv', ' ')
-
 ;log filename
 $logFile = FileOpen("Received.txt", 2)
 
@@ -24,6 +21,10 @@ $destroyUsers = '1'
 $destroyAttributes = '0'
 $requirePasswordReset = '1'
 $lockUsers = '0'
+
+
+;filenames of the csv
+$fileNames = StringSplit('schools.csv students.csv staff.csv classes.csv rosters.csv', ' ')
 
 ;Set files to strings
 Dim $files[5]
